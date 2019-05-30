@@ -1,0 +1,200 @@
+.header-colour {
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2C5364, #284B59, #24424E, #203A43, #1A313A, #152930);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2C5364, #284B59, #24424E, #203A43, #1A313A, #152930); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.landing-grid {
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2C5364, #284B59, #24424E, #203A43, #1A313A, #152930);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2C5364, #284B59, #24424E, #203A43, #1A313A, #152930); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.avatar-img {
+  height: 250px;
+  padding-top: 8em;
+  padding-bottom: 3em;
+}
+
+.banner-text {
+  background-color: black;
+  opacity: 0.5;
+  width: 50%;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.banner-text h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding:  1em;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.social-links i {
+  color: white;
+  font-size: 3em;
+  padding: 8px;
+}
+
+.projects-grid {
+  display: flex;
+  width: 100%;
+}
+
+
+.contact-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 800px;
+  background: white;
+  color: black;
+  margin-bottom: 2px;
+}
+
+.contact-grid h2 {
+  font-family:'Anton', sans-serif;
+}
+
+.contact-grid p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-bio {
+  width: 75%;
+  margin: auto;
+  padding-top: 1em;
+}
+
+.contact-list i {
+  text-align: center;
+  font-size: 50px;
+  padding-right: 30px;
+}
+
+.resume-right {
+  background: #27221f;
+  color: white;
+  padding-right: 2em;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form h4 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.contact-form input[type=text],input[type=email], select, textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+}
+
+.contact-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+     background-color: #45a049;
+}
+
+.page-content {
+  padding-top: 4em;
+}
+
+.project-card {
+  padding-top: 1em;
+}
+
+.sign-in {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sign-in h4 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.sign-in input[type=password],input[type=email], input[type=text], input[type=url], select, textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+}
+
+.sign-in button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sign-in button:hover {
+     background-color: #45a049;
+}
