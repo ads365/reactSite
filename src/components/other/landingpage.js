@@ -21,13 +21,13 @@ class Landing extends Component {
 
               <div className="social-links">
                 <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i className="fa fa-twitter" aria-hidden="true"></i>
                 </a>
                 <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                  <i class="fa fa-medium" aria-hidden="true"></i>
+                  <i className="fa fa-medium" aria-hidden="true"></i>
                 </a>
                 <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                  <i class="fa fa-github" aria-hidden="true"></i>
+                  <i className="fa fa-github" aria-hidden="true"></i>
                 </a>
               </div>
 
