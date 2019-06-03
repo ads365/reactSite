@@ -7,10 +7,9 @@ import { signOut } from '../../store/actions/authActions'
 const SignedInNavbar = (props) => {
   return (
     <Navigation>
-      <Link to="/">Log Out</Link>
+      <Link to="" onClick={props.signOut}>Log Out</Link>
       <Link to="/dashboard">Dashboard</Link>
       <Link to="/create">Create Project</Link>
-      <a onClick={props.signOut}>Log Out</a>
     </Navigation>
   )
 }

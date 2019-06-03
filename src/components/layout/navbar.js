@@ -5,16 +5,20 @@ import SignedInNavbar from './signedInNavbar';
 import SignedOutNavbar from './signedOutNavbar';
 import { connect } from 'react-redux';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { auth } = props;
+  console.log(auth);
+
+  // if logged in links = signed in navbar, else signed out navbar
+  const links = auth.uid? <SignedInNavbar /> : <SignedOutNavbar />
+
   return (
     <Layout>
       <Header className="header-colour" title={<Link style={{textDecoration:'none', color:'white'}} to="/">Anmol Singh</Link>} scroll>
-          <SignedInNavbar />
-          <SignedOutNavbar />
+          { links }
       </Header>
       <Drawer title={<Link style={{textDecoration:'none', color:'black'}} to="/">Anmol Singh</Link>} >
-          <SignedInNavbar />
-          <SignedOutNavbar />
+          { links }
       </Drawer>
     </Layout>
   )
@@ -23,6 +27,7 @@ const Navbar = () => {
 const mapStateToProps = (state) => {
   console.log(state);
   return {
+    auth: state.firebase.auth
   }
 }
 

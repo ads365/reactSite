@@ -7,7 +7,6 @@ const SignedOutNavbar = () => {
     <Navigation>
       <Link to="/signup">Sign Up</Link>
       <Link to="/signin">Sign In</Link>
-      <Link to="/dashboard">Dashboard</Link>
     </Navigation>
   )
 }
