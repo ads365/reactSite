@@ -1,5 +1,6 @@
 import React from 'react';
 import {Card, CardTitle, CardText, CardActions} from 'react-mdl';
+import moment from 'moment';
 
 
 const ProjectSummary = ({project}) => {
@@ -11,7 +12,7 @@ const ProjectSummary = ({project}) => {
               {project.content}
           </CardText>
           <CardActions border>
-              <div>links + date </div>
+              <div> {moment(project.createdAt.toDate()).calendar()} </div>
           </CardActions>
       </Card>
     </div>

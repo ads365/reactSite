@@ -3,6 +3,7 @@ import {Grid, Card, CardTitle, CardText, CardActions} from 'react-mdl';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
+import moment from 'moment';
 
 
 const ProjectDetails = (props) => {
@@ -17,7 +18,7 @@ const ProjectDetails = (props) => {
                   {project.content}
               </CardText>
               <CardActions border>
-                <div>timestamp</div>
+                <div>{moment(project.createdAt.toDate()).calendar()}</div>
               </CardActions>
           </Card>
         </div>
