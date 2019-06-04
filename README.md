@@ -10,4 +10,4 @@ Have not done any UX work on this.
 ### [https://mysiteapp-97d5a.web.app/](https://mysiteapp-97d5a.web.app/)
 
 You will need to sign up: you can use a fake email and a generic password.
-Once signed up you will be redirected to the dashboard. You can view projects and create projects. This is all just dummy data at the moment and as stated above UX hasn't been done yet.
+Once signed up you will be redirected to the dashboard. You can view projects and create projects. This is all just dummy data at the moment and bearely functional.
