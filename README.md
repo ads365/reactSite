@@ -12,5 +12,5 @@ Once signed up you will be redirected to the dashboard. You can view projects, b
 
 If you are creating a post I recommend using somethign like [html-online](https://html-online.com/editor/) to easily get HTML (for the content input) - stick to jsut using paragraphs (p tags) i havent tested beyond that).
 
-###Stack
+### Stack
 React, Node.js, redux, firestore/firebase(NoSQL).
