@@ -10,7 +10,7 @@ Have not done much UX work on this.
 You will need to sign up: you can use a fake email and a generic password.
 Once signed up you will be redirected to the dashboard. You can view projects, blogs and create them. This is all just dummy data at the moment.
 
-If you are creating a post I recommend using something like [html-online](https://html-online.com/editor/) to easily get HTML (Only For Content Input) - stick to jsut using paragraphs (p tags) i havent tested beyond that).
+If you are creating a post I recommend using something like [html-online](https://html-online.com/editor/) to easily get HTML (**Only For Content Input**) - stick to jsut using paragraphs (p tags) i havent tested beyond that).
 
 ### Stack
 React, Node.js, redux, firestore/firebase(NoSQL).
