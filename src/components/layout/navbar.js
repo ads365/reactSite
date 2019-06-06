@@ -14,10 +14,10 @@ const Navbar = (props) => {
 
   return (
     <Layout>
-      <Header className="header-colour" title={<Link style={{textDecoration:'none', color:'white'}} to="/">Anmol Singh</Link>} scroll>
+      <Header className="header-colour" title={<Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold'}} to="/">Anmol Singh</Link>} scroll>
           { links }
       </Header>
-      <Drawer title={<Link style={{textDecoration:'none', color:'black'}} to="/">Anmol Singh</Link>} >
+      <Drawer style={{background:'#333', color:'#333'}} title={<Link style={{color:'#FBFBFB'}} to="/">Anmol Singh</Link>}>
           { links }
       </Drawer>
     </Layout>

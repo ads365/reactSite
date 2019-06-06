@@ -3,20 +3,20 @@ import {Card, CardTitle, CardText, CardActions} from 'react-mdl';
 import moment from 'moment';
 
 
-const ProjectSummary = ({project}) => {
+const BlogSummary = ({blog}) => {
   return (
-    <div className="project-card">
+    <div className="blog-card">
       <Card shadow={0} style={{width: '300px', margin: 'auto'}}>
-          <CardTitle style={{color: 'black', height: '70px'}}>{project.title}</CardTitle>
+          <CardTitle style={{color: 'black', height: '70px'}}>{blog.title}</CardTitle>
           <CardText>
-              {project.summary}
+              {blog.summary}
           </CardText>
           <CardActions border>
-              <div>{moment(project.createdAt.toDate()).calendar()}</div>
+              <div>{moment(blog.createdAt.toDate()).calendar()}</div>
           </CardActions>
       </Card>
     </div>
   )
 }
 
-export default ProjectSummary;
+export default BlogSummary;

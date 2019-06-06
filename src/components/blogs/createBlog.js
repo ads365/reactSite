@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { createProject } from '../../store/actions/projectActions';
+import { createBlog } from '../../store/actions/blogActions';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
-class CreateProject extends Component {
+class CreateBlog extends Component {
   state = {
     title: '',
     summary: '',
@@ -18,19 +18,19 @@ class CreateProject extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.createProject(this.state)
+    this.props.createBlog(this.state)
     this.props.history.push('/dashboard');
   }
 
   render() {
 
-    //check i flogged in if not redirect to home else proceeed - state obtained from props
+    //check if logged in if not redirect to home else proceeed - state obtained from props
     const { auth } = this.props;
     if (!auth.uid) return <Redirect to='/' />
 
     return (
-      <div className='add-project'>
-        <h4>Add Project</h4>
+      <div className='add-blog'>
+        <h4>Add Blog</h4>
 
         <div>
           <form onSubmit={this.handleSubmit}>
@@ -39,28 +39,27 @@ class CreateProject extends Component {
             <input
               type="text"
               id="title"
-              placeholder="The title of your project"
+              placeholder="The title of your blog"
               onChange={this.handleChange}/>
 
             <label>Summary</label>
             <textarea
               type="text"
               id="summary"
-              placeholder="The summary of your project"
+              placeholder="The summary of your blog"
               onChange={this.handleChange}>
             </textarea>
 
             <label>Content</label>
             <textarea
+              rows={25}
               type="text"
               id="content"
-              rows={10}
-              placeholder="The details of your project"
+              placeholder="The content of your blog post"
               onChange={this.handleChange}>
             </textarea>
 
             <button>Submit</button>
-
           </form>
           <div>
             <h6>NOTE: Content must be in HTML... currently</h6>
@@ -79,8 +78,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    createProject: (project) => dispatch(createProject(project))
+    createBlog: (blog) => dispatch(createBlog(blog))
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CreateProject)
+export default connect(mapStateToProps, mapDispatchToProps)(CreateBlog)

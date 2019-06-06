@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Card, CardTitle, CardText, CardActions} from 'react-mdl';
+import {Grid, Cell} from 'react-mdl';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
@@ -11,17 +11,29 @@ const ProjectDetails = (props) => {
   if (project) {
     return (
       <Grid>
-        <div className="project-card">
-          <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-              <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>{project.title}</CardTitle>
-              <CardText>
-                  {project.content}
-              </CardText>
-              <CardActions border>
-                <div>{moment(project.createdAt.toDate()).calendar()}</div>
-              </CardActions>
-          </Card>
-        </div>
+        <Cell col={2}></Cell>
+        <Cell col={8}>
+          <div className="project-page">
+            <div className="project-title">
+              <h3>{project.title}</h3>
+            </div>
+            <div className="project-summary-title">
+              <h5>Summary</h5>
+            </div>
+            <div className="project-summary">
+              {project.summary}
+            </div>
+            <div className="project-content-title">
+              <h5>Project Details</h5>
+            </div>
+            <div className="project-content" dangerouslySetInnerHTML={{__html: (project.content || '')}}>
+            </div>
+            <div className="post-date">
+              {moment(project.createdAt.toDate()).calendar()}.
+            </div>
+          </div>
+        </Cell>
+        <Cell col={2}></Cell>
       </Grid>
     )
   }

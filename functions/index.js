@@ -21,6 +21,16 @@ exports.projectCreated = functions.firestore.document('projects/{projectId}').on
   return createNotification(notification);
 });
 
+exports.blogCreated = functions.firestore.document('blogs/{blogId}').onCreate(doc => {
+  const blog = doc.data();
+  const notification = {
+    content: 'Added A New Blog',
+    time: admin.firestore.FieldValue.serverTimestamp()
+  }
+
+  return createNotification(notification);
+});
+
 exports.userJoined = functions.auth.user().onCreate(user => {
   return admin.firestore().collection('users').doc(user.uid).get().then(doc => {
     const newUser = doc.data();

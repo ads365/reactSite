@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const SignedOutNavbar = () => {
   return (
     <Navigation>
-      <Link to="/signup">Sign Up</Link>
-      <Link to="/signin">Sign In</Link>
+      <Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold'}} to="/signup">Sign Up</Link>
+      <Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold'}} to="/signin">Sign In</Link>
     </Navigation>
   )
 }
