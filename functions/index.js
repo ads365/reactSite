@@ -21,6 +21,16 @@ exports.projectCreated = functions.firestore.document('projects/{projectId}').on
   return createNotification(notification);
 });
 
+exports.newMessage = functions.firestore.document('messages/{messageId}').onCreate(doc => {
+  const message = doc.data();
+  const notification = {
+    content: 'new message',
+    time: admin.firestore.FieldValue.serverTimestamp()
+  }
+
+  return createNotification(notification);
+});
+
 exports.blogCreated = functions.firestore.document('blogs/{blogId}').onCreate(doc => {
   const blog = doc.data();
   const notification = {

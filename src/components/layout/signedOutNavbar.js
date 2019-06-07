@@ -7,6 +7,9 @@ const SignedOutNavbar = () => {
     <Navigation>
       <Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold'}} to="/signup">Sign Up</Link>
       <Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold'}} to="/signin">Sign In</Link>
+      <Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold'}} to="/blogs">Blog</Link>
+      <Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold'}} to="/projects">Projects</Link>
+      <Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold'}} to="/contact">Contact</Link>
     </Navigation>
   )
 }

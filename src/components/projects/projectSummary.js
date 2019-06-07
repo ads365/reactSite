@@ -3,7 +3,7 @@ import {Card, CardTitle, CardText, CardActions} from 'react-mdl';
 import moment from 'moment';
 
 
-const ProjectSummary = ({project}) => {
+const ProjectsSummaryHome = ({project}) => {
   return (
     <div className="project-card">
       <Card shadow={0} style={{width: '300px', margin: 'auto'}}>
@@ -19,4 +19,4 @@ const ProjectSummary = ({project}) => {
   )
 }
 
-export default ProjectSummary;
+export default ProjectsSummaryHome;
