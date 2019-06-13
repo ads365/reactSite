@@ -5,7 +5,7 @@ import moment from 'moment';
 
 const ProjectsSummaryHome = ({project}) => {
   return (
-    <div className="project-card">
+    <div className="blog-card">
       <Card shadow={0} style={{width: '300px', margin: 'auto'}}>
           <CardTitle style={{color: 'black', height: '70px'}}>{project.title}</CardTitle>
           <CardText>

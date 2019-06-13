@@ -23,11 +23,11 @@ class Landing extends Component {
                 <a href="https://twitter.com/anmol365" rel="noopener noreferrer" target="_blank">
                   <i className="fa fa-twitter" aria-hidden="true"></i>
                 </a>
-                <a href="https://medium.com/@anmol365" rel="noopener noreferrer" target="_blank">
-                  <i className="fa fa-medium" aria-hidden="true"></i>
-                </a>
                 <a href="https://github.com/ads365" rel="noopener noreferrer" target="_blank">
                   <i className="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://medium.com/@anmol365" rel="noopener noreferrer" target="_blank">
+                  <i className="fa fa-medium" aria-hidden="true"></i>
                 </a>
               </div>
 

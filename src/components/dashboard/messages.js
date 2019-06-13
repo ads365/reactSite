@@ -12,7 +12,7 @@ const Messages = (props) => {
         return (
           <div className="blog-card" key={item.id}>
             <Card shadow={0} style={{width: '300px', margin: 'auto'}}>
-                <CardTitle style={{color: 'black', height: '70px'}}>{item.name}</CardTitle>
+                <CardTitle style={{color: 'black', height: '70px', fontFamily: 'Open Sans, sans-serif'}}>{item.name}</CardTitle>
                 <CardText>
                     {item.message}
                 </CardText>

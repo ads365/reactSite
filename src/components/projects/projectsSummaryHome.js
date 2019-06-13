@@ -11,7 +11,7 @@ const ProjectsSummaryHome = ({project}) => {
           <CardText style={{color:'#595959', textAlign:'center', fontSize:'18px'}}>
               {project.summary}
           </CardText>
-          <CardActions border>
+          <CardActions>
               <div style={{color:'#595959', textAlign:'left', paddingLeft:'10px'}}>{moment(project.createdAt.toDate()).calendar()}</div>
           </CardActions>
       </Card>

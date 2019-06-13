@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import SignedInNavbar from './signedInNavbar';
 import SignedOutNavbar from './signedOutNavbar';
 import { connect } from 'react-redux';
+import image from '../../navlogo.png';
 
 const Navbar = (props) => {
   const { auth } = props;
@@ -14,10 +15,10 @@ const Navbar = (props) => {
 
   return (
     <Layout>
-      <Header className="header-colour" title={<Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold'}} to="/">Anmol Singh</Link>} scroll>
+      <Header className="header-colour" title={<Link to="/"><img className="nav-image" src={image} alt=""/></Link>}>
           { links }
       </Header>
-      <Drawer style={{background:'#333', color:'#333'}} title={<Link style={{color:'#FBFBFB'}} to="/">Anmol Singh</Link>}>
+      <Drawer style={{background:'#333', color:'#333'}} title={<Link to="/"><img className="nav-image" src={image} alt=""/></Link>}>
           { links }
       </Drawer>
     </Layout>
