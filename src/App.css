@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, p {
   background: -webkit-linear-gradient(to right, #fbfbfb, #E6EBFF);  //Chrome 10-25, Safari 5.1-6
   background: linear-gradient(to right, #fbfbfb, #E6EBFF); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
   */
-  background: #333 !important;
+  background: #303A45 !important;
   color: #FBFBFB !important;
 }
 
@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: 'Open Sans', sans-serif !important;
 }
 
+.nav-link {
+  text-decoration: none !important;
+  color: #FBFBFB !important;
+}
 
 .landing-grid {
  position: fixed;
@@ -40,7 +44,7 @@ h1, h2, h3, h4, h5, h6, p {
 .banner-text h1 {
   font-size: 50px;
   font-weight: bold;
-  color: #333;
+  color: #455363;
   text-align: center;
   padding-top: 5px;
 }
@@ -56,7 +60,7 @@ h1, h2, h3, h4, h5, h6, p {
 .social-links i {
   font-size: 3em;
   padding: 8px;
-  color: #333;
+  color: #455363;
 }
 
 .projects-grid {
@@ -66,16 +70,22 @@ h1, h2, h3, h4, h5, h6, p {
 
 .project-summary-title {
   text-align: left;
+  color: #303A45;
 }
 
 .project-summary {
   text-align: left;
-  color: #717171;
+  color: #455363;
   font-size: 18px;
 }
 
 .project-content-title {
   text-align: left;
+  color: #303A45;
+}
+
+.project-title {
+  color: #303A45;
 }
 
 .project-content {
@@ -85,19 +95,24 @@ h1, h2, h3, h4, h5, h6, p {
 
 .project-content p{
   font-size: 18px !important;
-  color: #333 !important;
+  color: #303A45 !important;
 }
 
 .blog-summary {
-  color: #717171;
+  color: #455363;
   text-align: center;
   padding-bottom: 20px;
   font-size: 18px;
 }
 
+.blog-title {
+  color: #303A45;
+}
+
 .blog-content {
   text-align: left;
   padding-bottom: 10px;
+  color: #303A45;
 }
 
 .blog-content p {
@@ -109,22 +124,19 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .post-date {
-  color: #717171;
+  color: #455363;
   text-align: left;
   font-size: 15px !important;
 }
 
-.project-card {
-  padding-top: 1em;
-}
-
-.blog-card {
+.dash-card {
   padding-top: 1.5em;
 }
 
 .sign-in {
   max-width: 600px;
   margin: 0 auto;
+  color: #303A45;
 }
 
 .sign-in h4 {
@@ -145,7 +157,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 button {
-  background-color: #333;
+  background-color: #455363;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -154,18 +166,20 @@ button {
 }
 
 button:hover {
-  background-color: #333;
+  background-color: #303A45;
 }
 
 .add-project {
   max-width: 1200px;
   margin: 0 auto;
+  color: #303A45;
 }
 
 
 .add-blog {
   max-width: 1200px;
   margin: 0 auto;
+  color: #303A45;
 }
 
 .nav-image {

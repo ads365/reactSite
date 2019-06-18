@@ -5,14 +5,14 @@ import moment from 'moment';
 
 const BlogSummary = ({blog}) => {
   return (
-    <div className="blog-card">
+    <div className="dash-card">
       <Card shadow={0} style={{width: '300px', margin: 'auto'}}>
-          <CardTitle style={{color: 'black', height: '70px'}}>{blog.title}</CardTitle>
-          <CardText>
+          <CardTitle style={{color: '#303A45', height: '70px'}}>{blog.title}</CardTitle>
+          <CardText style={{color:'#455363'}}>
               {blog.summary}
           </CardText>
           <CardActions border>
-              <div>{moment(blog.createdAt.toDate()).calendar()}</div>
+              <div style={{color:'#303A45'}}>{moment(blog.createdAt.toDate()).calendar()}</div>
           </CardActions>
       </Card>
     </div>

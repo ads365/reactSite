@@ -18,7 +18,7 @@ const Navbar = (props) => {
       <Header className="header-colour" title={<Link to="/"><img className="nav-image" src={image} alt=""/></Link>}>
           { links }
       </Header>
-      <Drawer style={{background:'#333', color:'#333'}} title={<Link to="/"><img className="nav-image" src={image} alt=""/></Link>}>
+      <Drawer style={{background:'#455363', color:'#455363', border:'0'}} title={<Link to="/"><img className="nav-image" src={image} alt=""/></Link>}>
           { links }
       </Drawer>
     </Layout>

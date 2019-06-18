@@ -10,16 +10,16 @@ const Messages = (props) => {
     <div>
       {messages && messages.map(item => {
         return (
-          <div className="blog-card" key={item.id}>
+          <div className="dash-card" key={item.id}>
             <Card shadow={0} style={{width: '300px', margin: 'auto'}}>
-                <CardTitle style={{color: 'black', height: '70px', fontFamily: 'Open Sans, sans-serif'}}>{item.name}</CardTitle>
-                <CardText>
+                <CardTitle style={{color: '#303A45', height: '70px', fontFamily: 'Open Sans, sans-serif'}}>{item.name}</CardTitle>
+                <CardText style={{color: '#455363'}}>
                     {item.message}
                 </CardText>
-                <CardText>
+                <CardText style={{color: '#455363'}}>
                     {item.email}
                 </CardText>
-                <CardActions border>
+                <CardActions style={{color: '#303A45'}} border>
                     <div>{moment(item.submittedAt.toDate()).calendar()}</div>
                 </CardActions>
             </Card>

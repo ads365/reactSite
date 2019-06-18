@@ -19,7 +19,7 @@ class Dashboard extends Component {
 
     //parse project state to ProjectList
     return(
-      <div className="dashboard-container">
+      <div className="dashboard-container" style={{color:'#303A45'}}>
         <Grid>
           <Cell col={3}>
             <h4>Project List</h4>

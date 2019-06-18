@@ -9,21 +9,24 @@ const Notifications = (props) => {
   return (
     <div>
       <h4>Notifications</h4>
-      <Card shadow={0} style={{width: '300px', margin: 'auto'}}>
-          <CardTitle style={{color: 'black', height: '70px'}}>Recent Events</CardTitle>
-          <CardText>
-            <ul>
-              {notifications && notifications.map(item => {
-                return (
-                  <li key={item.id}>
-                    <span>{item.content}.</span>
-                    <div>{moment(item.time.toDate()).fromNow()}</div>
-                  </li>
-                )
-              })}
-            </ul>
-          </CardText>
-      </Card>
+      <div className="dash-card">
+        <Card shadow={0} style={{width: '300px', margin: 'auto'}}>
+            <CardTitle style={{color: '#303A45', height: '70px'}}>Recent Events</CardTitle>
+            <CardText style={{color: '#455363'}}>
+              <ul>
+                {notifications && notifications.map(item => {
+                  return (
+                    <li key={item.id}>
+                      <span>{item.content}.</span>
+                      <div>{moment(item.time.toDate()).fromNow()}</div>
+                    </li>
+                  )
+                })}
+              </ul>
+            </CardText>
+        </Card>
+      </div>
+
     </div>
   )
 }

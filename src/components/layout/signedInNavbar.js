@@ -1,16 +1,16 @@
 import React from 'react';
 import {Navigation} from 'react-mdl';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {connect} from 'react-redux';
 import { signOut } from '../../store/actions/authActions'
 
 const SignedInNavbar = (props) => {
   return (
     <Navigation>
-      <Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold', fontSize:'17px'}} to="" onClick={props.signOut}>Log Out</Link>
-      <Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold', fontSize:'17px'}} to="/dashboard">Dashboard</Link>
-      <Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold', fontSize:'17px'}} to="/createProject">Create Project</Link>
-      <Link style={{textDecoration:'none', color:'#FBFBFB', fontWeight:'bold', fontSize:'17px'}} to="/createBlog">Create Blog</Link>
+      <NavLink className='nav-link' activeStyle={{fontSize:'19px'}} style={{fontSize:'17px', fontWeight:'bold'}} to="" onClick={props.signOut}>Log Out</NavLink>
+      <NavLink className='nav-link' activeStyle={{fontSize:'19px'}} style={{fontSize:'17px', fontWeight:'bold'}} to="/dashboard">Dashboard</NavLink>
+      <NavLink className='nav-link' activeStyle={{fontSize:'19px'}} style={{fontSize:'17px', fontWeight:'bold'}} to="/createProject">Create Project</NavLink>
+      <NavLink className='nav-link' activeStyle={{fontSize:'19px'}} style={{fontSize:'17px', fontWeight:'bold'}} to="/createBlog">Create Blog</NavLink>
     </Navigation>
   )
 }
