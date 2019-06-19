@@ -12,11 +12,11 @@ class BlogsHome extends Component {
 
     //parse project state to ProjectList
     return(
-      <div className="blog-container" style={{color: '#303A45'}}>
+      <div className="blog-container">
         <Grid>
           <Cell col={2}></Cell>
           <Cell col={8}>
-            <h4>Blog Posts</h4>
+            <h3>Blog Posts</h3>
             <BlogListHome blogs={blogs}/>
           </Cell>
           <Cell col={2}></Cell>

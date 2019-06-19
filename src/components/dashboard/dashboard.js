@@ -19,7 +19,7 @@ class Dashboard extends Component {
 
     //parse project state to ProjectList
     return(
-      <div className="dashboard-container" style={{color:'#303A45'}}>
+      <div>
         <Grid>
           <Cell col={3}>
             <h4>Project List</h4>
@@ -34,6 +34,7 @@ class Dashboard extends Component {
             <Messages messages={messages}/>
           </Cell>
           <Cell col={3}>
+            <h4>Notifications</h4>
             <Notifications notifications={notifications}/>
           </Cell>
         </Grid>
