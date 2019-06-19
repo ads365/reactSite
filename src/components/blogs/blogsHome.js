@@ -16,7 +16,7 @@ class BlogsHome extends Component {
         <Grid>
           <Cell col={2}></Cell>
           <Cell col={8}>
-            <h3>Blog Posts</h3>
+            <h4>Blog Posts</h4>
             <BlogListHome blogs={blogs}/>
           </Cell>
           <Cell col={2}></Cell>
